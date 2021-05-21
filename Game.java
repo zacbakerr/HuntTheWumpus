@@ -1,14 +1,24 @@
+public class Game extends Map {
 
-public class Game extends Textfield {
+  // Game the panel for the game and instantiates 
+  // new map and moveshoot objects
 
-  public Game() {
-    setSize(900, 600); // Initializing the JPanel including size, location, etc.
+  public Game(int game) {
+
+    // Initializing the Panel including size, location, Title, Background, etc.
+
+    setSize(950, 600);
     setTitle("Hunt The Wumpus");
+    setBackground(new java.awt.Color(204, 166, 166));
     setLocationRelativeTo(null);
+
+    // Creating a map and a moveShoot for the Panel
+
     new Map();
-    new Textfield();
     new MoveShoot();
 
-  }
+    // Passes the parameter of the game mode to MoveShoot
 
+    setNum(game);
+  }
 }
