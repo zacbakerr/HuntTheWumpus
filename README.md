@@ -1,2 +1,2 @@
 # HuntTheWumpus
-9th Grade CS Final Project
+Foundations of Computer Science Final Project - Freshman Year of High School (2021)
